@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import pl.sdacademy.java.adv.school.domain.grade.Grade;
 import pl.sdacademy.java.adv.school.domain.student.model.Student;
 import pl.sdacademy.java.adv.school.domain.student.parsers.csv.CsvStudentsParserImpl;
 import pl.sdacademy.java.adv.school.domain.student.parsers.csv.OpenCsvStudentParser;
@@ -44,7 +45,7 @@ public class Main {
         objectMapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
         objectMapper.writeValue(System.out, students);
 
-
+        final List<Grade> grades;
 
     }
 
